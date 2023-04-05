@@ -1,0 +1,215 @@
+@media screen and (max-width: 600px) {
+  .background__avatars {
+    background: linear-gradient(120deg, #838383 0%, #3c3c3c 100%) no-repeat !important;
+  }
+  .background__checkSkin {
+    background: linear-gradient(120deg, #c2d7ff 0%, #8b90fd 100%);
+  }
+  .background__mtc {
+    background: -webkit-gradient(linear, left top, right top, from(#ff7680), to(#d81c28));
+    background: linear-gradient(90deg, #ff7680 0%, #d81c28 100%);
+  }
+  .background__yourHome {
+    background: -webkit-gradient(linear, left top, right top, from(#dbd6ff), to(#9180ff));
+    background: linear-gradient(90deg, #dbd6ff 0%, #9180ff 100%);
+  }
+  .background__worldQuests {
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%, #6b6b75), to(#31313a));
+    background: linear-gradient(90deg, #6b6b75 1%, #31313a 100%);
+  }
+  .background__network {
+    background: -webkit-gradient(linear, left top, right top, from(#7ee3ea), to(#21b7e7));
+    background: linear-gradient(90deg, #7ee3ea 0%, #21b7e7 100%);
+  }
+  .background__teamJect {
+    background: -webkit-gradient(linear, left top, right top, from(#ff6aa8), to(#a11a63));
+    background: linear-gradient(90deg, #ff6aa8 0%, #a11a63 100%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .background__avatars {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(131, 131, 131, 0)), to(rgba(60, 60, 60, 0)));
+    background-image: linear-gradient(to right, rgba(131, 131, 131, 0) 0%, rgba(60, 60, 60, 0) 100%);
+    z-index: 1;
+  }
+  .background__avatars::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#838383), to(#3c3c3c));
+    background-image: linear-gradient(to bottom, #838383 0%, #3c3c3c 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__avatars:hover::before {
+    opacity: 1;
+  }
+  .background__checkSkin {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__checkSkin::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c2d7ff), to(#8b90fd));
+    background-image: linear-gradient(to bottom, #c2d7ff 0%, #8b90fd 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__checkSkin:hover::before {
+    opacity: 1;
+  }
+  .background__mtc {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__mtc::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff7680), to(#d81c28));
+    background-image: linear-gradient(to bottom, #ff7680 0%, #d81c28 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__mtc:hover::before {
+    opacity: 1;
+  }
+  .background__yourHome {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__yourHome::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd6ff), to(#9180ff));
+    background-image: linear-gradient(to bottom, #dbd6ff 0%, #9180ff 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__yourHome:hover::before {
+    opacity: 1;
+  }
+  .background__worldQuests {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__worldQuests::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6b6b75), to(#31313a));
+    background-image: linear-gradient(to bottom, #6b6b75 0%, #31313a 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__worldQuests:hover::before {
+    opacity: 1;
+  }
+  .background__network {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__network::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7ee3ea), to(#21b7e7));
+    background-image: linear-gradient(to bottom, #7ee3ea 0%, #21b7e7 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__network:hover::before {
+    opacity: 1;
+  }
+  .background__teamJect {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(194, 215, 255, 0)));
+    background-image: linear-gradient(to right, rgba(194, 215, 255, 0) 0% rgba(139, 145, 253, 0) 100%);
+    z-index: 1;
+  }
+  .background__teamJect::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6aa8), to(#a11a63));
+    background-image: linear-gradient(to bottom, #ff6aa8 0%, #a11a63 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__teamJect:hover::before {
+    opacity: 1;
+  }
+  .case-slide > .case-project > .case-project__animation {
+    position: static;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .case-slide:hover > .case-project > .case-project__animation {
+    opacity: 1;
+  }
+  .case-slide:hover > .case-project > .case-project__circle {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .case-slide:hover > .case-project > .case-project__circle {
+    opacity: 0;
+  }
+  .case-slide:hover > .case-application > .case-application__title {
+    color: white;
+  }
+  .case-slide:hover > .case-application > .case-application__subtitle {
+    color: white;
+  }
+}

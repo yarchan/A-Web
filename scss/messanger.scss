@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import 'colors.scss';
+
+.messenger {
+  display: flex;
+  z-index: 5;
+
+  flex-direction: column;
+  &__whatsapp:hover &__whatsapp-svg {     
+    fill: black;
+  } 
+  &__whatsapp:hover  {
+    background: white;     
+  } 
+  &__telegram:hover &__telegram-svg {     
+    fill: black;
+  } 
+  &__telegram:hover  {
+    background: white;     
+  } 
+  &__whatsapp {      
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 61px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;      
+    background: rgba(0, 0, 0, 0.05); 
+  }   
+  &__whatsapp-svg{
+    fill: $primary;
+  }    
+  &__telegram {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 61px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  &__telegram-svg{
+    fill: $primary;
+  }
+  &__icon:hover{
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  &__icon{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 61px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;      
+    background: rgba(0, 0, 0, 0.05); 
+  }
+} 

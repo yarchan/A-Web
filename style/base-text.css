@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.base-text-title {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  line-height: 29.23px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.base-text-subtitle {
+  line-height: 24.56px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat';
+}
+
+.gradiet-text {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 144px;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(21%, #8a8ffd), color-stop(71%, #d0a3fd));
+  background: linear-gradient(180deg, #8a8ffd 21%, #d0a3fd 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 84px;
+}
+
+.gradiet-subtext {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 144px;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(21%, #8a8ffd), color-stop(71%, #d0a3fd));
+  background: linear-gradient(180deg, #8a8ffd 21%, #d0a3fd 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 84px;
+}
+
+.bold-title {
+  margin-right: 69px;
+  font-weight: 700;
+  font-size: 96px;
+  font-family: 'Montserrat';
+}

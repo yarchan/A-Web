@@ -1,0 +1,262 @@
+@import 'colors.scss';
+
+@media screen and (max-width:600px) {
+  .background__avatars{
+    background: $avatars-color !important;
+  }
+  .background__checkSkin{
+    background: $chekSkin;
+  }
+  .background__mtc{
+    background: $mtc;
+  }
+  .background__yourHome{
+    background: $yourHome;
+  }
+  .background__worldQuests{
+    background: $worldQuests;
+  }
+  .background__network{
+    background: $network;
+  }
+  .background__teamJect{
+    background: $teamJect;
+  }
+}
+
+
+ @media screen and(min-width:600px) {
+  .background__avatars{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(131, 131, 131, 0) 0%,
+      rgba(60, 60, 60, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__avatars::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(131, 131, 131, 1) 0%,
+      rgba(60, 60, 60, 1) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__avatars:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__checkSkin{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__checkSkin::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(194,215,255) 0%,
+      rgb(139,144,253) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__checkSkin:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__mtc{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__mtc::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255,118,128) 0%,
+      rgb(216,28,40) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__mtc:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__yourHome{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__yourHome::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(219,214,255) 0%,
+      rgb(145,128,255) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__yourHome:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__worldQuests{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__worldQuests::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(107,107,117) 0%,
+      rgb(49,49,58) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__worldQuests:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__network{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__network::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(126,227,234) 0%,
+      rgb(33,183,231) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__network:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .background__teamJect{
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      rgba(194, 215, 255, 0) 0%
+      rgba(139, 145, 253, 0) 100%
+    );
+    z-index: 1;
+  }
+  .background__teamJect::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255,106,168) 0%,
+      rgb(161,26,99) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .background__teamJect:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .case-slide> .case-project > .case-project__animation {
+    position:static;
+    opacity: 0;
+    transition: all 1s;
+   }
+  .case-slide:hover > .case-project > .case-project__animation {
+    opacity: 1;
+   }
+  .case-slide:hover > .case-project > .case-project__circle {
+    opacity: 1;
+    transition: 1s;
+   }
+   
+  .case-slide:hover > .case-project > .case-project__circle {
+    opacity: 0;
+   }
+   .case-slide:hover> .case-application > .case-application__title  {
+    color: white;
+   }
+   .case-slide:hover> .case-application >.case-application__subtitle {
+    color: white;
+   }
+  
+ }

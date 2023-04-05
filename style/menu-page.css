@@ -1,0 +1,262 @@
+.menu-page {
+  z-index: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-page .back-to-project {
+  z-index: 5;
+  height: 100%;
+  width: 315px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d0a3fd), to(#8a8ffd));
+  background: linear-gradient(180deg, #d0a3fd 0%, #8a8ffd 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 150px 0 0;
+}
+
+.menu-page .back-to-project__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  margin: 41px 22px 0 0;
+}
+
+.menu-page .back-to-project__wrapper .back-img {
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+}
+
+.menu-page__wrapper {
+  width: 70%;
+}
+
+.menu-page__wrapper-top {
+  margin: 0 0 157px;
+}
+
+.menu-page__wrapper-top .menu-page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 31px;
+}
+
+.menu-page__wrapper-top .base-text-subtitle {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-page__wrapper-top .bold-title {
+  cursor: pointer;
+  margin: 0 0 31px;
+}
+
+.menu-page__wrapper-top .gradiet-text {
+  cursor: pointer;
+  margin: 0 57px 0 0;
+}
+
+.menu-page__wrapper-bottom .content__intresting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.menu-page__wrapper-bottom .content__intresting .separation__block {
+  margin-bottom: 0;
+  width: 30%;
+  margin-right: 50px;
+}
+
+.menu-page__wrapper-bottom .content__intresting .separation__block .text {
+  cursor: default;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 1850px) {
+  .menu-page .back-to-project {
+    width: 235px;
+    margin: 0 118px 0 0;
+  }
+  .menu-page .back-to-project__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90%;
+  }
+  .menu-page .gradiet-text {
+    cursor: pointer;
+    font-size: 80px;
+  }
+  .menu-page .bold-title {
+    cursor: pointer;
+    font-size: 80px;
+  }
+  .menu-page__wrapper-bottom .content__intresting .separation__block {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .menu-page .back-to-project {
+    width: 220px;
+    margin: 0 65px 0 0;
+  }
+  .menu-page .back-to-project__wrapper {
+    height: 90%;
+  }
+  .menu-page .gradiet-text {
+    font-size: 64px;
+  }
+  .menu-page .bold-title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dark-mode-about-company {
+    color: black !important;
+    fill: black !important;
+  }
+  .menu-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-page .back-to-project {
+    min-height: 165px;
+    height: 165px;
+    width: 100%;
+    margin: 0;
+  }
+  .menu-page .back-to-project__wrapper {
+    margin: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu-page .back-to-project__wrapper .back-img {
+    padding: 0 16px 16px;
+  }
+  .menu-page__wrapper-top {
+    margin: 118px 0 95px;
+  }
+  .menu-page__wrapper-top .gradiet-text {
+    margin: 0 0 0 0;
+  }
+  .menu-page .gradiet-text {
+    font-size: 64px;
+  }
+  .menu-page .bold-title {
+    font-size: 64px;
+  }
+  .menu-page__wrapper-bottom .content__intresting {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-page__wrapper-bottom .content__intresting .separation__block {
+    margin-bottom: 43px;
+  }
+  .menu-page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 31px;
+  }
+  .menu-page-title .base-text-subtitle {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-height: 750px) {
+  .menu-page__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-page__wrapper {
+    width: 90%;
+    padding: 0 0 50px;
+  }
+  .menu-page .gradiet-text {
+    font-size: 48px;
+  }
+  .menu-page .bold-title {
+    font-size: 48px;
+  }
+  .menu-page__wrapper-bottom .content__intresting {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-page__wrapper-bottom .content__intresting .separation__block .text {
+    font-size: 24px;
+  }
+}

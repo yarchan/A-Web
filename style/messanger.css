@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.messenger__whatsapp:hover .messenger__whatsapp-svg {
+  fill: black;
+}
+
+.messenger__whatsapp:hover {
+  background: white;
+}
+
+.messenger__telegram:hover .messenger__telegram-svg {
+  fill: black;
+}
+
+.messenger__telegram:hover {
+  background: white;
+}
+
+.messenger__whatsapp {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 61px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.messenger__whatsapp-svg {
+  fill: #FFFFFF;
+}
+
+.messenger__telegram {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 61px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.messenger__telegram-svg {
+  fill: #FFFFFF;
+}
+
+.messenger__icon:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.messenger__icon {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 61px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}

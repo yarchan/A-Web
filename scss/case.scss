@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import 'colors.scss';
+
+
+.case-page{
+  z-index: 1;
+  background: white;
+  position: absolute;
+  transition: all 0.3s linear ;
+  width: 100%;
+  height: 100vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat',sans-serif;
+  &__wrapper {
+    width: 80%;
+   
+  }
+  &__top{    
+    margin: 0 0 54px;
+    display: flex;
+    align-items: baseline;
+   
+    .case-scrollbar{
+      width: 700px;
+      height: 2px;
+    }
+  }
+  
+  .case-slide{
+
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .case-project{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__circle{
+      position: absolute;
+      top: 0px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: linear-gradient(120deg, rgba(131, 131, 131, 1) 0%, rgba(60, 60, 60, 1) 100%) no-repeat;
+    }
+    &__iphone{
+      position: absolute;
+      top:36px;
+      z-index: 10;
+      max-height: 380px;
+      max-width: 380px;
+    }
+    &__animation{
+      z-index: 1;
+      width: 100%;
+      max-height: 400px;
+    }
+  }
+
+
+  .case-application{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &__title{
+    }
+    &__subtitle{
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+}
+.case-title{
+  margin-right: 69px;
+  font-weight: 700;
+  font-size: 96px;
+  font-family: 'Montserrat';
+}
+
+@media screen and (max-width:1650px) and (min-width:1500px) and (max-height:740px) {
+  .case-page__top .case-title{
+    font-size: 60px;
+  }
+  .case-page__top{
+    margin: 0 0 10px;
+  }
+}
+
+@media screen and(max-width:1650px) {
+  .case-page{
+    &__top{
+     .case-title{
+        font-size: 72px;
+     }
+    }
+  }
+}
+@media screen and(max-width:1100px) {
+  .case-page{
+    &__top{
+     .case-title{
+        font-size: 64px;
+     }
+    }
+  }
+}
+
+@media screen and (max-width:880px) {
+  .case-page{
+    &__top{
+     .case-title{
+        font-size: 48px;
+     }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .case-project{
+    &__circle {
+      display: none;
+  }
+}
+  .case-page{
+    &__top{
+      flex-direction: column;
+      .case-title{
+        margin-bottom: 20px;
+      }
+      .case-scrollbar{
+        width: 100%;
+      }
+    }
+  }
+  .case-page{
+    &__top{
+     .case-title{
+        font-size: 48px;
+     }
+    }
+  }
+}
+@media screen and (max-width:450px) {
+
+}
+@media screen and(max-width:400px) and (max-height:850px) {
+  .case-page{
+    &__top{ 
+      margin: 0 0 20px;
+    }
+    .case-project{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &__circle{
+        position: absolute;
+        top: 0px;
+        width: 250px !important;
+        height: 250px !important;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgba(131, 131, 131, 1) 0%, rgba(60, 60, 60, 1) 100%) no-repeat;
+      }
+      &__iphone{
+        position: absolute;
+        top:36px;
+        z-index: 10;
+        max-height: 280px;
+        max-width: 280px;
+      }
+      &__animation{
+        z-index: 1;
+        width: 100%;
+        max-height: 400px;
+      }
+    }
+    .case-transaction{
+      max-height: 365px !important;
+    }
+  }
+}
+@media screen and(max-width:400px) and (max-height:700px) {
+  .case-page{
+    &__top{ 
+      margin: 0 0 10px;
+    }
+    .case-project{
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &__circle{
+        position: absolute;
+        top: 0px;
+        width: 250px !important;
+        height: 250px !important;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgba(131, 131, 131, 1) 0%, rgba(60, 60, 60, 1) 100%) no-repeat;
+      }
+      &__iphone{
+        position: absolute;
+        top:36px;
+        z-index: 10;
+        max-height: 230px;
+        max-width: 230px;
+      }
+      &__animation{
+        z-index: 1;
+        width: 100%;
+        max-height: 280px;
+      }
+    }
+    .case-transaction{
+      max-height: 325px !important;
+    }
+  }
+}
+
+.open-case{
+  left: 0;
+}

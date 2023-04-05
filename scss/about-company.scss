@@ -1,0 +1,156 @@
+@import 'colors.scss';
+
+.about-company{
+  transition: 0.3s all linear;
+  position: absolute;
+  display: flex;
+  font-family: 'Montserrat',sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  &__wrapper{
+    padding-left:  187px ;
+    display: flex; 
+    .right-block{
+      margin-right: 100px;
+    }
+  }
+  .left-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .left-block__title{
+      width: 35%;
+    }
+  }
+  .company-title{
+
+  }
+  .text{
+    font-size: 36px;
+  }
+  .block-content{
+      display:flex;
+      flex-direction: row;
+  }
+  .separation{
+    &__block{
+      width: 800px;
+      .content:last-child{
+        margin: 0;
+      }
+    }
+  }
+  .separation{
+    &__block:last-child{
+      .content:first-child{
+        margin: 0 0 90px;
+      }
+    }
+  }
+}
+
+.boundered-about-company{
+  display: flex;
+}
+.open-about-company{
+  display: flex;
+}
+
+.content__intresting .separation__block .btn{
+  padding: 0 5px;
+}
+
+@media screen and(min-width:1910px) {
+  .about-company{
+    .separation{
+      &__block:last-child{
+         display: none;
+       }
+     }
+    .left-block{
+      .separation{
+       &__block:last-child{
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1910px) {
+  
+  .about-company{
+    .separation{
+      &__block{
+        width: 40%;
+        .content:last-child{
+          margin: 0;
+        }
+      }
+    }
+    &__wrapper{
+    }
+    .left-block{
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width:1650px) {
+  
+  .about-company{
+    
+    .gradiet-text{
+      font-size: 96px;
+    }
+  }
+}
+@media screen and (max-width:1000px) {
+  
+  .about-company{
+    align-items: start;
+    &__wrapper{
+      padding-top: 110px;
+      padding-left: 100px;
+    }
+    .separation{
+      flex-direction: column;
+      &__block{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:600px) {
+  .boundered-about-company{
+    flex-direction: column;
+  }
+  .about-company__wrapper .right-block{
+    margin: 0;
+  }
+  .about-company{
+    
+    .section-bottom__wrapper-project{
+      padding: 0px 20px 50px !important;
+    }
+    &__wrapper {
+      padding: 110px 20px 40px;        
+    }
+    
+    .gradiet-text{
+      font-size: 54px;
+    }
+    .text{
+      font-size: 24px;
+    }
+  }
+  .about-company-active {
+    top: calc(100% + 69px);
+    padding-bottom: 22px;
+  } 
+}
+
